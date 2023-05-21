@@ -1,0 +1,44 @@
+.nav {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px #00000042;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .navItems {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+
+    .inputField {
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px 5px 10px 10px;
+      gap: 30px;
+      input {
+        border: none;
+      }
+    }
+    .subtitle {
+      font-size: 20px;
+      font-weight: 400;
+      color: #878686;
+    }
+
+    .title {
+      margin-right: 32px;
+      margin-left: auto;
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--primary);
+    }
+  }
+}

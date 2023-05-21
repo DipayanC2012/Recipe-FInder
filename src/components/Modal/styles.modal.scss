@@ -1,0 +1,28 @@
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+  }
+  
+  .modalWrapper {
+    position: fixed;
+    z-index: 12;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 900px;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--primary);
+    overflow: auto;
+  }
