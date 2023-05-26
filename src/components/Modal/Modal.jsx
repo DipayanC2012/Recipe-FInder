@@ -37,7 +37,7 @@ const Modal = ({
   const stepsArray = analyzedInstructions.map((step) => {
     return step.steps
   })
-  console.log(vegetarian)
+  // console.log(vegetarian)
 
   return createPortal(
     <>
