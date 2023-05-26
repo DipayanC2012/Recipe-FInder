@@ -25,6 +25,7 @@
       gap: 30px;
       input {
         border: none;
+        outline: none;
       }
     }
     .subtitle {
@@ -39,6 +40,7 @@
       font-size: 30px;
       font-weight: 900;
       color: var(--primary);
+      cursor: pointer;
     }
   }
 }

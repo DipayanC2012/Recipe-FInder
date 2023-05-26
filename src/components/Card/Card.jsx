@@ -21,7 +21,6 @@ const Card = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  console.log(isModalOpen)
   return (
     <>
       <div className={styles.cardWrapper} onClick={() => setIsModalOpen(true)}>
@@ -29,8 +28,14 @@ const Card = ({
         <div className={styles.detailsContainer}>
           <div className={styles.cta}>
             <div className={styles.title}>{title}</div>
-            <div className={styles.outsideRing}>
-              <div className={styles.dot} />
+            <div
+              className={`${styles.circle}  ${
+                vegetarian ? styles.veg : styles.nonVeg
+              }`}
+            >
+              <div className={styles.outsideRing}>
+                <div className={styles.dot} />
+              </div>
             </div>
           </div>
           <div className={styles.description}>{summary}</div>
@@ -57,6 +62,7 @@ const Card = ({
           summary={summary}
           analyzedInstructions={analyzedInstructions}
           setIsModalOpen={setIsModalOpen}
+          vegetarian={vegetarian}
         />
       )}
     </>

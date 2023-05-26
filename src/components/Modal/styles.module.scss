@@ -1,0 +1,138 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  z-index: 11;
+}
+
+.modalWrapper {
+  position: fixed;
+  z-index: 12;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 75%;
+  height: 90%;
+  border-radius: 10px;
+  overflow: scroll;
+  font-family: 'Times New Roman', Times, serif;
+
+  .cta {
+    display: flex;
+    padding: 20px 10px 10px 10px;
+    gap: 20px;
+
+    .specificationItem {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 18px;
+      color: var(--primary);
+    }
+
+    .closeButton {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+  }
+
+  .detailsWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 30px;
+
+    img {
+      width: 500px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .detailsContainer {
+      padding: 0px 50px 0px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .titleContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+          font-size: 25px;
+          color: var(--primary);
+          font-weight: 900;
+        }
+        .circle {
+          .outsideRing {
+            padding: 2px;
+            border: 1px solid;
+            border-radius: 50%;
+            .dot {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+            }
+          }
+        }
+        .veg {
+          .outsideRing {
+            border-color: var(--primary);
+
+            .dot {
+              background: var(--primary);
+            }
+          }
+        }
+        .nonVeg {
+          .outsideRing {
+            border-color: red;
+
+            .dot {
+              background: red;
+            }
+          }
+        }
+      }
+
+      .description {
+        color: #878686;
+        font-size: 18px;
+
+        p {
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .stepsSection {
+    padding: 10px;
+
+    p {
+      font-size: 20px;
+      color: var(--primary);
+    }
+
+    ol {
+      padding: 20px 50px;
+
+      li {
+        margin-bottom: 15px;
+        color: #878686;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -29,47 +29,68 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 5px;
+      align-items: center;
+
       .title {
         color: var(--primary);
         font-size: 20px;
         font-weight: 900;
       }
-      .outsideRing {
-        padding: 2px;
-        border: 1px solid red;
-        border-radius: 50%;
-        .dot {
-          width: 10px;
-          height: 10px;
+      .circle {
+        .outsideRing {
+          padding: 2px;
+          border: 1px solid;
           border-radius: 50%;
-          background: red;
+          .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+          }
+        }
+      }
+      .veg {
+        .outsideRing {
+          border-color: var(--primary);
+
+          .dot {
+            background: var(--primary);
+          }
+        }
+      }
+      .nonVeg {
+        .outsideRing {
+          border-color: red;
+
+          .dot {
+            background: red;
+          }
         }
       }
     }
 
     .description {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;  
-        overflow: hidden;
-        font-size: 15px;
-        font-weight: 400;
-        color: #878686;
-        margin: 0px 0px 5px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-size: 15px;
+      font-weight: 400;
+      color: #878686;
+      margin: 0px 0px 5px;
     }
 
-    .specifications{
+    .specifications {
+      display: flex;
+      justify-content: space-between;
+
+      .specificationItem {
         display: flex;
-        justify-content: space-between;
-
-        .specificationItem{
-            display: flex;
-            align-items: center;
-            gap: 3px;
-            font-size: 15px;
-            color: var(--primary);
-
-        }
+        align-items: center;
+        gap: 3px;
+        font-size: 15px;
+        color: var(--primary);
+      }
     }
   }
 }
