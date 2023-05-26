@@ -24,6 +24,7 @@ const Navbar = ({ handleSubmit }) => {
           className={styles.title}
           onClick={() => {
             handleSubmit('indian')
+            inputRef.current.value=''
           }}
         >
           <MdFastfood /> Recipe Finder
